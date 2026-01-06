@@ -16,8 +16,22 @@ body {
 
 /* ===== TRANG CHỦ ===== */
 
-.home-wrapper {
+@keyframes ink-drift {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0.08;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0.15;
+  }
+}
+
+.home-wrapper,
+.paper-frame,
+.post {
   position: relative;
+  z-index: 1;
 }
 
 .home-wrapper::before {
@@ -31,13 +45,15 @@ body {
 }
 
 .home-wrapper::after {
-  content: "❀";
+  content: "";
   position: absolute;
-  bottom: -50px;
-  right: -40px;
-  font-size: 100px;
-  color: rgba(195, 142, 180, 0.14);
-  transform: rotate(10deg);
+  inset: -40px;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(120,90,100,0.12), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(90,70,80,0.1), transparent 65%);
+  animation: ink-drift 18s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .home {
@@ -226,38 +242,41 @@ body {
   
 }
 body::before {
-  content: "❀ ❀ ❀ ❀ ❀";
+  content: "🌸 🌸 🌸";
   position: fixed;
-  top: 120px;
-  left: 24px;
-  writing-mode: vertical-rl;
+  top: -20vh;
+  left: 15%;
   font-size: 22px;
-  line-height: 1.8;
-  color: rgba(195, 142, 180, 0.22);
+  filter: blur(0.3px);
+  color: rgba(200, 120, 150, 0.65);
+  animation: sakura-fall 32s linear infinite;
   pointer-events: none;
+  z-index: 0;
 }
 
 body::after {
-  content: "❀ ❀ ❀";
+  content: "🍃 🍃";
   position: fixed;
-  bottom: 140px;
-  right: 30px;
-  writing-mode: vertical-rl;
-  font-size: 20px;
-  line-height: 1.9;
-  color: rgba(195, 142, 180, 0.18);
+  top: -30vh;
+  left: 65%;
+  font-size: 18px;
+  filter: blur(0.6px);
+  opacity: 0.35;
+  animation: sakura-fall 44s linear infinite;
   pointer-events: none;
+  z-index: 0;
 }
+
 @keyframes sakura-fall {
   0% {
-    transform: translateY(-10px) rotate(0deg);
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
     opacity: 0;
   }
   10% {
-    opacity: 0.35;
+    opacity: 0.6;
   }
   100% {
-    transform: translateY(120vh) rotate(180deg);
+    transform: translateY(120vh) translateX(40px) rotate(220deg);
     opacity: 0;
   }
 }
