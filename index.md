@@ -53,3 +53,7 @@ layout: default
   </div>
 
 </div>
+<span class="sakura" style="left:10%; animation-duration: 28s;">🌸</span>
+<span class="sakura" style="left:30%; animation-duration: 34s;">🌸</span>
+<span class="sakura" style="left:55%; animation-duration: 30s;">🌸</span>
+<span class="sakura" style="left:75%; animation-duration: 36s;">🌸</span>
