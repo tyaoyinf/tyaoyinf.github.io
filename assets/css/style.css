@@ -1,9 +1,9 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;500;600&family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Spectral:wght@400;500&family=Cormorant+Garamond:wght@400;500;600&display=swap');
 
 body {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Spectral', serif;
   background-color: #f6f1eb;
   background-image:
     radial-gradient(rgba(0,0,0,0.015) 1px, transparent 1px),
@@ -61,7 +61,7 @@ body {
 }
 
 .home-hero h1 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Fraunces', serif;
   font-size: 42px;
   font-weight: 500;
   letter-spacing: 0.12em;
@@ -78,7 +78,7 @@ body {
 }
 
 .home-section h2 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Fraunces', serif;
   font-weight: 500;
   letter-spacing: 0.08em;
   margin-bottom: 20px;
@@ -90,7 +90,7 @@ body {
 }
 
 .home-enter a {
-  font-family: 'Libre Baskerville', serif;
+ font-family: 'Fraunces', serif;
   font-size: 20px;
   color: #6f4b3e;
   border-bottom: 1px solid #d8b6b0;
@@ -145,7 +145,7 @@ body {
 }
 
 .post h1 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Fraunces', serif;
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -158,7 +158,7 @@ body {
 }
 
 .post::before {
-  content: "❦ ❦ ❦";
+  content: "🌸🌸🌸";
   display: block;
   text-align: center;
   color: #c9b6a8;
@@ -168,7 +168,7 @@ body {
 .post-content p:first-of-type::first-letter,
 .paper-frame p:first-of-type::first-letter,
 .diary-block::first-letter {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Fraunces', serif;
   float: left;
   font-size: 3.6em;
   line-height: 0.9;
@@ -190,7 +190,7 @@ body {
   border-radius: 50%;
   color: #7a3e4e;
   letter-spacing: 0.2em;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Fraunces', serif;
   background: rgba(195, 142, 180, 0.18);
 }
 
@@ -213,7 +213,7 @@ body {
 }
 
 .post-list a {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Fraunces', serif;
   font-size: 1.2em;
   color: #5a3d3d;
 }
@@ -247,4 +247,27 @@ body::after {
   line-height: 1.9;
   color: rgba(195, 142, 180, 0.18);
   pointer-events: none;
+}
+@keyframes sakura-fall {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.35;
+  }
+  100% {
+    transform: translateY(120vh) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+.sakura {
+  position: fixed;
+  top: -20px;
+  font-size: 18px;
+  color: rgba(195, 142, 180, 0.35);
+  animation: sakura-fall linear infinite;
+  pointer-events: none;
+  z-index: 0;
 }
