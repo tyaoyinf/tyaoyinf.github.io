@@ -10,7 +10,7 @@ layout: default
     <p class="tagline">viết, nhìn, và giữ lại những điều nhỏ bé lớn lao</p>
   </div>
 
-  <div class="home-section">
+  <div class="paper-frame japanese">
     <h2>Mình là ai?</h2>
     <p>
       Chào mừng bạn đã ghé thăm 🩷, mình là Đào Yêu Ngân Phỉ 🌙🌸 - một sắc hồng phấn đậm vương chút ánh bạc mờ của trăng, nghe nhẹ vậy thôi nhưng chạm vào không biết bao nhiêu tầng cảm xúc đâu đó~
@@ -33,8 +33,8 @@ layout: default
     </p>
   </div>
 
-  <div class="home-enter">
-    <a href="/posts">mở trang viết</a>
+  <div class="seal-wrapper">
+    <a href="/posts" class="ink-seal">mở trang viết</a>
   </div>
 
   <div class="home-contact">
