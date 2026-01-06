@@ -1,11 +1,11 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Zen+Old+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;500;600&family=Noto+Serif&display=swap');
 
 body {
   background-color: #faf7f4;
   color: #2f2a28;
-  font-family: 'Zen Old Mincho', serif;
+  font-family: 'Noto Serif', serif;
   line-height: 1.9;
   font-size: 17px;
 }
@@ -33,7 +33,7 @@ body {
 }
 
 .home-hero h1 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Libre Baskerville', serif;
   font-size: 42px;
   font-weight: 500;
   letter-spacing: 0.12em;
@@ -50,7 +50,7 @@ body {
 }
 
 .home-section h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Libre Baskerville', serif;
   font-weight: 500;
   letter-spacing: 0.08em;
   margin-bottom: 20px;
@@ -62,7 +62,7 @@ body {
 }
 
 .home-enter a {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Libre Baskerville', serif;
   font-size: 20px;
   color: #6f4b3e;
   border-bottom: 1px solid #d8b6b0;
@@ -73,7 +73,7 @@ body {
   opacity: 0.7;
 }
 
-/* ===== CONTACT ===== */
+/* ===== GÕ CỬA NHÀ MÌNH ===== */
 
 .home-contact {
   text-align: center;
@@ -98,7 +98,7 @@ body {
 }
 
 .post h1 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Libre Baskerville', serif;
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.08em;
