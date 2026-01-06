@@ -4,18 +4,24 @@
 
 body {
   font-family: 'Spectral', serif;
-  background-color: #f6f1eb;
+  background-color: #f1f2f4; 
   background-image:
-    radial-gradient(rgba(0,0,0,0.015) 1px, transparent 1px),
-    radial-gradient(rgba(0,0,0,0.01) 1px, transparent 1px);
-  background-size: 18px 18px, 36px 36px;
-  background-position: 0 0, 10px 10px;
-  color: #2b2b2b;
+    radial-gradient(rgba(0,0,0,0.025) 1px, transparent 1px),
+    radial-gradient(rgba(0,0,0,0.018) 1px, transparent 1px);
+  background-size: 14px 14px, 28px 28px; 
+  background-position: 0 0, 7px 7px;
+  color: #2f2f33;
   line-height: 1.85;
 }
 
+
 /* ===== TRANG CHỦ ===== */
 
+:root {
+  --ink-pink: #b07a8c;
+  --ink-pink-soft: rgba(176,122,140,0.18);
+  --border-cool: #d6d8dd;
+}
 
 .home-wrapper,
 .paper-frame,
@@ -29,11 +35,11 @@ body::before {
   position: fixed;
   inset: -30%;
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
-  mix-blend-mode: multiply;
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.55' numOctaves='5'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
   pointer-events: none;
   z-index: 0;
-  animation: paper-breath 18s ease-in-out infinite alternate;
+  animation: paper-breath 22s ease-in-out infinite alternate;
 }
 
 @keyframes paper-breath {
@@ -63,7 +69,7 @@ body::before {
   height: 180px;
   object-fit: cover;
   border-radius: 100%;
-  border: 1px solid #d8cec5;
+  border: 1px solid var(--border-cool);
   margin-bottom: 30px;
 }
 
@@ -77,7 +83,7 @@ body::before {
 
 .tagline {
   font-style: italic;
-  color: #7a6a5f;
+  color: #7f828a;
 }
 
 .home-section {
@@ -99,7 +105,7 @@ body::before {
 .home-enter a {
  font-family: 'Fraunces', serif;
   font-size: 20px;
-  color: #6f4b3e;
+  color: var(--ink-pink);
   border-bottom: 1px solid #d8b6b0;
   padding-bottom: 6px;
 }
@@ -110,11 +116,11 @@ body::before {
 
 .paper-frame.japanese {
   position: relative;
-  border: 1px solid #e2d8cd;
+  border: 1px solid var(--border-cool);
   border-radius: 22px;
   padding: 52px;
   margin: 90px 0;
-  background: rgba(255,255,255,0.5);
+  background: rgba(248,248,250,0.6);
 }
 
 .paper-frame.japanese::before {
@@ -137,8 +143,10 @@ body::before {
   padding-top: 40px;
 }
 
-.home-contact a {
-  color: #7a6a5f;
+.tagline,
+.home-contact,
+.post-date {
+  color: #7f828a;
 }
 
 /* ===== BÀI VIẾT ===== */
@@ -147,8 +155,8 @@ body::before {
   max-width: 680px;
   margin: 100px auto;
   padding: 60px;
-  background-color: #fffdfb;
-  border: 1px solid #e6dcd2;
+  background-color: #f8f9fb; /* xám sữa */
+  border: 1px solid #dadde3;
 }
 
 .post h1 {
@@ -230,20 +238,6 @@ body::before {
   font-size: 0.85em;
   color: #9b8c7c;
   margin-top: 4px;
-  
-}
-body::before {
-  content: "🌸 🌸 🌸";
-  position: fixed;
-  top: -20vh;
-  left: 15%;
-  font-size: 22px;
-  filter: blur(0.3px);
-  color: rgba(200, 120, 150, 0.65);
-  animation: sakura-fall 32s linear infinite;
-  pointer-events: none;
-  z-index: 0;
-}
 
 body::after {
   content: "🍃 🍃";
@@ -307,3 +301,17 @@ body::after {
   z-index: 0;
 }
 
+.home-enter a {
+  color: var(--ink-pink);
+  border-bottom: 1px solid rgba(176,122,140,0.35);
+}
+
+.post::before {
+  color: rgba(176,122,140,0.45);
+}
+
+html::before,
+html::after {
+  filter: blur(0.8px);
+  opacity: 0.4;
+}
