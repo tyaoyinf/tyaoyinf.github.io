@@ -73,6 +73,15 @@ body {
   opacity: 0.7;
 }
 
+.paper-frame.japanese {
+  border: 1px solid #d6cbbf;
+  border-radius: 18px;
+  padding: 40px 44px;
+  margin: 70px 0;
+  background: #faf7f3;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.6);
+}
+
 /* ===== GÕ CỬA NHÀ MÌNH ===== */
 
 .home-contact {
@@ -116,4 +125,38 @@ body {
   text-align: center;
   color: #c9b6a8;
   margin-bottom: 30px;
+}
+
+.post-content p:first-of-type::first-letter,
+.paper-frame p:first-of-type::first-letter,
+.diary-block::first-letter {
+  font-family: 'Cormorant Garamond', serif;
+  float: left;
+  font-size: 3.2em;
+  line-height: 1;
+  padding-right: 10px;
+  padding-top: 4px;
+  color: #6f5a4e;
+}
+
+.seal-wrapper {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.ink-seal {
+  display: inline-block;
+  padding: 14px 34px;
+  border: 2px solid #7a3e4e;
+  border-radius: 50%;
+  color: #7a3e4e;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.15em;
+  text-transform: lowercase;
+  background: rgba(195, 142, 180, 0.08);
+}
+
+.ink-seal:hover {
+  background: rgba(195, 142, 180, 0.15);
+  transform: rotate(-2deg);
 }
