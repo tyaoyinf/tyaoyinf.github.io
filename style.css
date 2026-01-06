@@ -39,7 +39,7 @@ body {
 
 .nav-left,
 .nav-right {
-  font-size: 12px;
+  font-size: 20px;
   letter-spacing: 3px;
   color: var(--text-soft);
 }
@@ -52,7 +52,7 @@ body {
 
 .nav-center a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 3px;
   color: var(--text-main);
 }
@@ -127,7 +127,7 @@ body {
   border-radius: 50%;
   margin: 0 auto 40px;
   opacity: 0.35;
-  filter: blur(1px);
+  filter: blur(0.5px);
 }
 
 /* ---------------- MENU ---------------- */
