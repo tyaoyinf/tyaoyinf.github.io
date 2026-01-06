@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home-wrapper">
 
   <div class="home-hero">
     <img src="/assets/images/avatar.jpg" alt="portrait">
@@ -21,15 +21,16 @@ layout: default
     </p>
   </div>
 
-  <div class="home-section">
+  <div class="paper-frame japanese">
     <p>
      Mình không xuất hiện đều đặn đâu nha! Đôi khi mình biến mất một chút, để dưỡng bệnh, để nghỉ ngơi, như mèo con cuộn mình gom lại ánh sáng 🐈 rồi khi đủ ấm nó sẽ quay về, chậm rãi thôi. Mong bạn sẽ dịu dàng với một mèo nhỏ hơi yếu, hay mơ mộng, nhưng luôn nghiêm túc và thành thật với công việc của mình nè 🐾.
     </p>
-
+    
+<div class="paper-frame japanese">
     <p>
     À, nếu muốn thủ thỉ riêng điều gì đó, bạn có thể hỏi nhỏ rồi ghé qua tài khoản cá nhân của mình nha! Nhà mình không ồn ào, chỉ có trà ấm và kiên nhẫn, đủ để đón những tâm hồn mỏi mệt ghé vào trú mưa một lát nè ☔~
     
-    - Từ một ngày chủ nhật cuối năm 2025.
+    - Từ một ngày chủ nhật cuối năm 2025. <br>
     </p>
   </div>
 
