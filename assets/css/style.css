@@ -1,26 +1,104 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Zen+Old+Mincho&display=swap');
 
 body {
-  font-family: 'Cormorant Garamond', serif;
   background-color: #faf7f4;
-  color: #3a2f2f;
+  color: #2f2a28;
+  font-family: 'Zen Old Mincho', serif;
   line-height: 1.9;
-  font-size: 18px;
+  font-size: 17px;
 }
+
+/* ===== TRANG CHỦ ===== */
+
+.home {
+  max-width: 720px;
+  margin: 120px auto;
+  padding: 0 20px;
+}
+
+.home-hero {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.home-hero img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 1px solid #d8cec5;
+  margin-bottom: 30px;
+}
+
+.home-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-style: italic;
+  color: #7a6a5f;
+}
+
+.home-section {
+  margin-bottom: 60px;
+}
+
+.home-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+
+.home-enter {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.home-enter a {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  color: #6f4b3e;
+  border-bottom: 1px solid #d8b6b0;
+  padding-bottom: 6px;
+}
+
+.home-enter a:hover {
+  opacity: 0.7;
+}
+
+/* ===== CONTACT ===== */
+
+.home-contact {
+  text-align: center;
+  font-size: 14px;
+  color: #7a6a5f;
+  border-top: 1px solid #e5dbd2;
+  padding-top: 40px;
+}
+
+.home-contact a {
+  color: #7a6a5f;
+}
+
+/* ===== BÀI VIẾT ===== */
 
 .post {
   max-width: 680px;
-  margin: 80px auto;
+  margin: 100px auto;
   padding: 60px;
   background-color: #fffdfb;
   border: 1px solid #e6dcd2;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
 }
 
 .post h1 {
+  font-family: 'Cormorant Garamond', serif;
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -38,34 +116,4 @@ body {
   text-align: center;
   color: #c9b6a8;
   margin-bottom: 30px;
-}
-.home-diary {
-  max-width: 600px;
-  margin: 120px auto;
-  text-align: center;
-}
-
-.home-diary h1 {
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  margin-bottom: 20px;
-}
-
-.subtitle {
-  font-style: italic;
-  color: #8a6f6f;
-}
-.enter {
-  margin-top: 40px;
-}
-
-.enter a {
-  font-style: italic;
-  color: #8a6f6f;
-  border-bottom: 1px solid #e6dcd2;
-  padding-bottom: 4px;
-}
-
-.enter a:hover {
-  opacity: 0.7;
 }
