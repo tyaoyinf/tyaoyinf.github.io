@@ -14,10 +14,10 @@ layout: default
     <h2>Mình là ai?</h2>
     <p>
       Chào mừng bạn đã ghé thăm 🩷, mình là Đào Yêu Ngân Phỉ 🌙🌸 - một sắc hồng phấn đậm vương chút ánh bạc mờ của trăng, nghe nhẹ vậy thôi nhưng chạm vào không biết bao nhiêu tầng cảm xúc đâu đó~
-      Mình làm nghệ thuật bằng nhiều cách: 
-      🎨 Là họa sĩ, nơi hình ảnh đi trước lời nói.
-      ✒️ Là người viết, khi chữ giúp mình gọi tên những điều rất nhỏ, rất sâu, hay giúp mình kịp ghi lại những khoảnh khắc trước khi nó tan mất.
-      🩰 Và là vũ công vào những ngày cơ thể còn đủ ngoan, chịu lắng nghe nhịp thở, để chuyển động thay mình trò chuyện với thế giới.
+      Mình làm nghệ thuật bằng nhiều cách: <br>
+      🎨 Là họa sĩ, nơi hình ảnh đi trước lời nói. <br>
+      ✒️ Là người viết, khi chữ giúp mình gọi tên những điều rất nhỏ, rất sâu, hay giúp mình kịp ghi lại những khoảnh khắc trước khi nó tan mất. <br>
+      🩰 Và là vũ công vào những ngày cơ thể còn đủ ngoan, chịu lắng nghe nhịp thở, để chuyển động thay mình trò chuyện với thế giới. <br>
     </p>
   </div>
 
