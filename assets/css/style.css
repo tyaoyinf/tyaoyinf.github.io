@@ -160,3 +160,25 @@ body {
   background: rgba(195, 142, 180, 0.15);
   transform: rotate(-2deg);
 }
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 60px 0;
+}
+
+.post-list li {
+  margin-bottom: 28px;
+}
+
+.post-list a {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2em;
+  color: #5a3d3d;
+}
+
+.post-date {
+  display: block;
+  font-size: 0.85em;
+  color: #9b8c7c;
+  margin-top: 4px;
+}
