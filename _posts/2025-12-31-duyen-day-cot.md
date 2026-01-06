@@ -3,7 +3,7 @@ layout: post
 title: "Duyên dây cót"
 ---
 
-Có những người đi ngang đời rất sớm,
+Có những người đi ngang đời rất sớm, <br>
 từ thuở chữ còn nghiêng mực non tay. <br>
 Em học cách đặt dấu chấm cho ngay,<br>
 mà chưa học nổi một lần rung động. <br>
@@ -89,4 +89,4 @@ Vì giữa trăm ngàn lối đời khác, <br>
 anh vẫn chọn em <br>
 và ở lại. <br>
 
-- xin cúi đầu cảm ơn người gieo chữ đã khéo tay se hộ một mối duyên người, 🌙🌸. <br>
+✎𓂃 xin cúi đầu cảm ơn người gieo chữ đã khéo tay se hộ một mối duyên người, 🌙🌸. <br>
