@@ -1,9 +1,9 @@
 :root {
   --bg: #f1f1f0;
   --cold-gray: #d4d5d8;
-  --text-main: #3f3e3e;
-  --text-soft: #6f6f6f;
-  --dusty-rose: #dfb1b6;
+  --text-main: #434343;
+  --text-soft: #828282;
+  --dusty-rose: #f4a7b9;
 }
 
 * {
