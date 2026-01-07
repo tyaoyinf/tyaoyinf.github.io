@@ -308,16 +308,15 @@ body {
   animation: dustDrift linear infinite;
 }
 
-/* bụi bay chậm, không rơi thẳng */
 @keyframes dustDrift {
   0% {
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(-20px, -10px);
+    transform: translate(-70px, -40px);
   }
   100% {
-    transform: translate(20px, -30px);
+    transform: translate(90px, -140px);
   }
 }
 
