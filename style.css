@@ -16,6 +16,7 @@ body {
   background: var(--bg);
   color: var(--text-main);
   font-family: 'Yuji Syuku', serif;
+  letter-spacing: -1px;
   font-weight: 350;
   font-size: 18px; 
   line-height: 1.8;
@@ -46,7 +47,7 @@ body {
 .nav-left,
 .nav-right {
   font-size: 24px;
-  letter-spacing: 3px;
+  letter-spacing: 1x;
   color: var(--text-soft);
 }
 
@@ -59,7 +60,7 @@ body {
 .nav-center a {
   text-decoration: none;
   font-size: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   color: var(--text-main);
 }
 
