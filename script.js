@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ===== PETALS (ICON) ===== */
   const petalLayer = document.querySelector(".petal-layer");
-  const petals = ["☘︎", "❆", "❀"];
+  const petals = ["☘︎", "⁎"];
 
   for (let i = 0; i < 30; i++) {
     const petal = document.createElement("span");
