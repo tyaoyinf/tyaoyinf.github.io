@@ -37,21 +37,11 @@ body {
 
 /* ---------------- NAV ---------------- */
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 100%;
-  background: rgba(241, 241, 240, 0.75);
-  backdrop-filter: blur(6px);
-  z-index: 10;
-}
-
-.nav-inner {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 22px 32px; /* MATCH frame */
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
+  padding: 22px 12px;
 }
 
 .nav-left {
