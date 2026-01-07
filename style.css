@@ -23,6 +23,13 @@ body {
   overflow-x: hidden;
 }
 
+.hero img,
+.menu-content img,
+.gallery-grid img {
+  position: relative;
+  z-index: 2;
+}
+
 .intro {
   font-size: inherit;
   color: var(--text-soft);
@@ -282,26 +289,28 @@ body {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 1;
   overflow: hidden;
 }
 
 /* ===== DUST ===== */
 .dust-layer span {
   position: absolute;
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(150, 138, 120, 0.35); 
   border-radius: 50%;
+  filter: blur(1.2px);
   animation: dustFloat linear infinite;
 }
 
 @keyframes dustFloat {
   0% {
-    transform: translateY(0);
+    transform: translateY(20px);
     opacity: 0;
   }
-  20% { opacity: 1; }
-  50% {
+  20% { opacity: 0.6; }
+  60% {
     transform: translateY(-20px);
+    opacity: 0.4;
   }
   100% {
     transform: translateY(-60px);
