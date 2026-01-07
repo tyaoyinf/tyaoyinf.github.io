@@ -1,7 +1,7 @@
 :root {
   --bg: #3a3226;
   --cold-gray: #91989f; /*ginnezumi*/
-  --text-main: #72636e;
+  --text-main: #787878;
   --text-soft: #566c73; /*ainezumi*/
   --dusty-rose: #dc9fb4; /*nadeshiko*/
 }
@@ -395,9 +395,9 @@ body {
 .book-frame::after {
   content: "";
   position: absolute;
-  inset: 8px -18px -18px 10px;
+  inset: 12px -28px -24px 16px;
 
-  background: #877f6c;
+  background: #787878;
   border: 1px solid rgba(80,80,80,0.12);
   z-index: -2;
 }
