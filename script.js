@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (dist < 180) {
         const force = (180 - dist) / 180;
-        d.vx += (dx / dist) * force * 2.4;
-        d.vy += (dy / dist) * force * 2.4;
+        d.vx += (dx / dist) * force * 1.2;
+        d.vy += (dy / dist) * force * 1.2;
       }
 
       // lực bơi nền – giúp bụi hồi lại
