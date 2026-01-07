@@ -35,31 +35,24 @@ body {
   color: var(--text-soft);
 }
 
-/* ---------------- NAV ---------------- */
+/* ---------------- NAV (STABLE) ---------------- */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;              /* QUAN TRỌNG */
+  width: 100%;
 
+  min-height: 92px;
   padding: 18px 32px;
-
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "left right"
-    "center right";
-
-  row-gap: 6px;
 
   background: rgba(252, 250, 242, 0.6);
   backdrop-filter: blur(6px);
+
   z-index: 10;
 }
 
-/* wrapper để giữ content không quá rộng */
 .nav-inner {
+  width: 100%;
   max-width: 1600px;
   margin: 0 auto;
 
@@ -69,6 +62,9 @@ body {
   grid-template-areas:
     "left right"
     "center right";
+
+  row-gap: 6px;
+  align-items: start;
 }
 
 /* LEFT */
@@ -83,12 +79,10 @@ body {
 /* CENTER */
 .nav-center {
   grid-area: center;
-
   list-style: none;
   display: flex;
   gap: 48px;
-
-  padding: 0;   /* FIX ul mặc định */
+  padding: 0;
   margin: 0;
 }
 
@@ -99,10 +93,6 @@ body {
   color: var(--text-main);
 }
 
-.nav-center a:hover {
-  opacity: 0.6;
-}
-
 /* RIGHT */
 .nav-right {
   grid-area: right;
@@ -110,9 +100,9 @@ body {
   letter-spacing: -1px;
   color: var(--text-soft);
   text-align: right;
+  line-height: 1;
 
   align-self: end;
-  line-height: 1;
 }
 
 /* ---------------- HERO ---------------- */
