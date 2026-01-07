@@ -213,7 +213,7 @@ body {
 .general {
   padding-left: 1rem;
   border-left: 1px solid var(--cold-gray);
-  transform: translateY(60px)
+  transform: translateY(50px)
 }
 
 /* ---------------- GALLERY ---------------- */
