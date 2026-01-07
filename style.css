@@ -42,11 +42,20 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   padding: 18px 22px;
+
+  background: rgba(241, 241, 240, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 10;
+}
+
+.nav-left,
+.nav-right {
+  line-height: 1;
 }
 
 .nav-left {
   font-size: 28px;
-  letter-spacing: -1x;
+  letter-spacing: -1px;
   color: var(--text-soft);
   justify-self: start;
 }
