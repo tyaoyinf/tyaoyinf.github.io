@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ===== DUST ===== */
   const dustLayer = document.querySelector(".dust-layer");
 
-  for (let i = 0; i < 220; i++) {
+  for (let i = 0; i < 250; i++) {
     const dust = document.createElement("span");
 
-    const size = Math.random() * 2 + 0.6;
+    const size = Math.random() * 2.2 + 0.6;
     dust.style.width = size + "px";
     dust.style.height = size + "px";
 
