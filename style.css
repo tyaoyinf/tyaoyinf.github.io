@@ -1,8 +1,8 @@
 :root {
   --bg: #f1f1f0;
   --cold-gray: #d4d5d8;
-  --text-main: #434343;
-  --text-soft: #828282;
+  --text-main: #4f4f48;
+  --text-soft: #91989f;
   --dusty-rose: #dc9fb4; /*nadeshiko*/
 }
 
@@ -139,10 +139,10 @@ body {
   width: 160px;
   height: 160px;
   background: var(--dusty-rose);
-  border-radius: 50%;
+  border-radius: 60%;
   margin: 0 auto 40px;
-  opacity: 0.35;
-  filter: blur(0.5px);
+  opacity: 0.8;
+  filter: blur(0.6px);
 }
 
 /* ---------------- MENU ---------------- */
