@@ -60,7 +60,7 @@ body {
 .nav-center a {
   text-decoration: none;
   font-size: 20px;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
   color: var(--text-main);
 }
 
