@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
       y: Math.random() * window.innerHeight,
       vx: (Math.random() - 0.5) * 0.3,
       vy: (Math.random() - 0.5) * 0.3
+      baseVx: (Math.random() - 0.5) * 0.15,
+      baseVy: (Math.random() - 0.5) * 0.15
     });
   }
 
@@ -43,13 +45,17 @@ document.addEventListener("DOMContentLoaded", () => {
         d.vy += (dy / dist) * force * 2.4;
       }
 
+      // lực bơi nền – giúp bụi hồi lại
+d.vx += (d.baseVx - d.vx) * 0.01;
+d.vy += (d.baseVy - d.vy) * 0.01;
+
       // chuyển động nền
       d.vx += (Math.random() - 0.5) * 0.02;
       d.vy += (Math.random() - 0.5) * 0.02;
 
       // ma sát
-      d.vx *= 0.94;
-      d.vy *= 0.94;
+      d.vx *= 0.965;
+      d.vy *= 0.965;
 
       d.x += d.vx;
       d.y += d.vy;
