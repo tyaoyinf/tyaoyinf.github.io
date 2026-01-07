@@ -334,9 +334,9 @@ body {
 }
 
 .divider {
-  width: 55%;
+  width: 68%;
   height: 1px;
-  margin: 120px auto;
+  margin: 20px auto;
   background: rgba(130, 130, 130, 0.2);
   filter: blur(0.3px);
 }
