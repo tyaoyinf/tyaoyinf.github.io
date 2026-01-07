@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ===== DUST ===== */
   const dustLayer = document.querySelector(".dust-layer");
 
-  for (let i = 0; i < 120; i++) {
+  for (let i = 0; i < 220; i++) {
     const dust = document.createElement("span");
 
     const size = Math.random() * 3 + 1;
