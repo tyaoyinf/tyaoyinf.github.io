@@ -68,8 +68,8 @@ body {
 
 /* ---------------- HERO ---------------- */
 .hero {
-  min-height: 140vh;
-  padding: 180px 120px 0;
+  min-height: 90vh;
+  padding: 120px 90px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 60px;
