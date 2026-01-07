@@ -44,6 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
         d.vx += (dx / dist) * force * 1.2;
         d.vy += (dy / dist) * force * 1.2;
       }
+      
+// ===== ambient flow (luôn tồn tại) =====
+d.vx += d.baseVx * 0.02;
+d.vy += d.baseVy * 0.02;
 
       // lực bơi nền – giúp bụi hồi lại
 d.vx += (d.baseVx - d.vx) * 0.01;
