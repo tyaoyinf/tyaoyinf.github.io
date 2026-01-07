@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   for (let i = 0; i < 220; i++) {
     const dust = document.createElement("span");
 
-    const size = Math.random() * 3 + 1;
+    const size = Math.random() * 2 + 0.6;
     dust.style.width = size + "px";
     dust.style.height = size + "px";
 
