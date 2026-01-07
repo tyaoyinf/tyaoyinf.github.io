@@ -17,6 +17,7 @@ body {
   color: var(--text-main);
   font-family: 'Cormorant Infant', serif;
   font-weight: 300;
+  font-size: 16px;
   line-height: 1.8;
   overflow-x: hidden;
 }
@@ -174,26 +175,45 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: left; /* ép về trái */
 }
 
 .facts li {
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
-  color: #444;
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.92rem;
+  color: #2f2f2f;
 }
 
-.facts strong {
-  display: inline-block;
-  min-width: 140px;
-  font-weight: 500;
-  color: #666;
-}
-
+/* icon nhỏ, mờ, không gây rối */
 .icon {
-  margin-right: 0.4rem;
-  color: #bfb1b6; 
+  color: #b0b0b0;
+  font-size: 0.7rem;
+  transform: translateY(-2px);
 }
 
+/* đề mục */
+.facts strong {
+  font-weight: 500;
+  color: #9a9a9a; /* xám nhạt */
+  min-width: 140px; /* canh thẳng hàng */
+  display: inline-block;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+}
+
+/* nội dung */
+.facts li em,
+.facts li span:last-child {
+  color: #1f1f1f;
+}
+
+.general {
+  padding-left: 1rem;
+  border-left: 1px solid #e3e3e3;
+}
 
 /* ---------------- GALLERY ---------------- */
 .gallery {
