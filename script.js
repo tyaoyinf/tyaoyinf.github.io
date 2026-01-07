@@ -14,16 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     dustLayer.appendChild(dust);
 
-    dusts.push({
-      el: dust,
-      x: Math.random() * window.innerWidth,
-      y: Math.random() * window.innerHeight,
-      vx: (Math.random() - 0.5) * 0.3,
-      vy: (Math.random() - 0.5) * 0.3
-      baseVx: (Math.random() - 0.5) * 0.15,
-      baseVy: (Math.random() - 0.5) * 0.15
-    });
-  }
+   dusts.push({
+  el: dust,
+  x: Math.random() * window.innerWidth,
+  y: Math.random() * window.innerHeight,
+  vx: (Math.random() - 0.5) * 0.3,
+  vy: (Math.random() - 0.5) * 0.3,
+  baseVx: (Math.random() - 0.5) * 0.15,
+  baseVy: (Math.random() - 0.5) * 0.15
+});
 
   let mouseX = -9999;
   let mouseY = -9999;
