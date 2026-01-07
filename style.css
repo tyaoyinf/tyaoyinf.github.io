@@ -1,8 +1,8 @@
 :root {
   --bg: #f1f1f0;
-  --cold-gray: #d4d5d8;
-  --text-main: #4f4f48;
-  --text-soft: #91989f;
+  --cold-gray: #91989f; /*ginnezumi*/
+  --text-main: #566c73;
+  --text-soft: #828282; /*tro*/
   --dusty-rose: #dc9fb4; /*nadeshiko*/
 }
 
