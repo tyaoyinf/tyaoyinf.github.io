@@ -85,7 +85,7 @@ body {
 /* ---------------- HERO ---------------- */
 .hero {
   min-height: 100vh;
-  padding: 120px 90px 0;
+  padding: 100px 100px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
@@ -156,7 +156,7 @@ body {
 /* ---------------- MENU ---------------- */
 .menu {
   min-height: 80vh;
-  padding: 120px 90px;
+  padding: 100px 100px;
 }
 
 .menu h2 {
@@ -255,7 +255,7 @@ body {
 /* ---------------- GALLERY ---------------- */
 .gallery {
   min-height: 80vh;
-  padding: 120px 90px;
+  padding: 100px 100px;
 }
 
 .gallery h2 {
@@ -337,4 +337,12 @@ body {
     transform: translateY(120vh) rotate(360deg);
     opacity: 0;
   }
+}
+
+.divider {
+  width: 55%;
+  height: 1px;
+  margin: 120px auto;
+  background: rgba(130, 130, 130, 0.2);
+  filter: blur(0.3px);
 }
