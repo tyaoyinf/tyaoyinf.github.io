@@ -185,7 +185,6 @@ body {
 .menu-text {
   font-size: 18px;
   color: var(--text-soft);
-  text-align: center;
 }
 
 /* facts */
@@ -245,6 +244,7 @@ body {
   font-style: italic;
   letter-spacing: 0.04em;
   color: var(--text-soft);
+  text-align: center;
 }
 
 
