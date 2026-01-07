@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
 }
 
+.intro {
+  font-size: inherit;
+}
+
 /* ---------------- NAV ---------------- */
 .navbar {
   position: fixed;
