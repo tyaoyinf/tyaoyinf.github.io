@@ -37,7 +37,7 @@ body {
 
 /* ---------------- NAV ---------------- */
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -97,8 +97,7 @@ body {
   letter-spacing: -1px;
   color: var(--text-soft);
   text-align: right;
-
-  align-self: end; /* bám đáy của 2 hàng */
+  align-self: end; 
   line-height: 1;
 }
 
