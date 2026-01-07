@@ -12,8 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
     dust.style.width = size + "px";
     dust.style.height = size + "px";
 
-    dust.style.left = Math.random() * 100 + "vw";
-    dust.style.top = Math.random() * 100 + "vh";
+    dust.dataset.x = Math.random() * window.innerWidth;
+    dust.dataset.y = Math.random() * window.innerHeight;
+
+    dust.style.left = dust.dataset.x + "px";
+    dust.style.top = dust.dataset.y + "px";
 
     dust.style.animationDuration = 25 + Math.random() * 35 + "s";
     dust.style.animationDelay = Math.random() * 10 + "s";
@@ -23,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ===== PETALS (ICON) ===== */
   const petalLayer = document.querySelector(".petal-layer");
-  const petals = ["☘︎"];
+  const petals = ["✿"];
 
   for (let i = 0; i < 30; i++) {
     const petal = document.createElement("span");
@@ -41,16 +44,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-window.addEventListener("scroll", () => {
-  const currentScroll = window.scrollY;
-  const delta = currentScroll - lastScrollY;
+window.addEventListener("mousemove", (e) => {
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
 
   document.querySelectorAll(".dust-layer span").forEach(dust => {
-    const drift = delta * 0.12;
-    dust.style.transform = `translate(${drift}px, ${-drift}px)`;
-  });
+    const dx = mouseX - dust.dataset.x;
+    const dy = mouseY - dust.dataset.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
 
-  lastScrollY = currentScroll;
+    const force = Math.max(0, 120 - distance) / 120;
+
+    const moveX = -dx * force * 0.15;
+    const moveY = -dy * force * 0.15;
+
+    dust.style.transform = `translate(${moveX}px, ${moveY}px)`;
+  });
 });
 
 
