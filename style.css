@@ -170,6 +170,30 @@ body {
   color: var(--text-soft);
   text-align: center;
 }
+.facts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.facts li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.facts strong {
+  display: inline-block;
+  min-width: 140px;
+  font-weight: 500;
+  color: #666;
+}
+
+.icon {
+  margin-right: 0.4rem;
+  color: #b58a8a; /* hồng đỗ nhạt */
+}
+
 
 /* ---------------- GALLERY ---------------- */
 .gallery {
