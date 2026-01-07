@@ -228,6 +228,7 @@ body {
   margin: 48px auto 0;
   max-width: 400px;
   text-align: right;
+  justify-self: end;
 }
 
 .menu-after .monologue {
@@ -235,6 +236,7 @@ body {
   line-height: 1.8;
   color: var(--text-soft);
   text-align: right;
+  justify-self: end;
 }
 
 .menu-after .invite {
