@@ -108,6 +108,7 @@ body {
   left: -60px;
   font-size: 100px;
   color: #707c74;
+  z-index: 3;
 }
 
 /* ---- CHỮ BAY ---- */
