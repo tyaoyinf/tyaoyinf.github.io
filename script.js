@@ -1,3 +1,5 @@
+let lastScrollY = window.scrollY;
+
 document.addEventListener("DOMContentLoaded", () => {
 
   /* ===== DUST ===== */
@@ -37,6 +39,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     petalLayer.appendChild(petal);
   }
+});
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.scrollY;
+  const delta = currentScroll - lastScrollY;
+
+  document.querySelectorAll(".dust-layer span").forEach(dust => {
+    const drift = delta * 0.12;
+    dust.style.transform = `translate(${drift}px, ${-drift}px)`;
+  });
+
+  lastScrollY = currentScroll;
 });
 
 
