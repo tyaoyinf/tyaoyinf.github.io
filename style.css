@@ -223,8 +223,8 @@ body {
 }
 
 .menu-after .monologue {
-  font-size: 20px;
-  line-height: 1.9;
+  font-size: 18px;
+  line-height: 1.8;
   color: var(--text-soft);
 }
 
@@ -233,7 +233,7 @@ body {
   font-size: 18px;
   font-style: italic;
   letter-spacing: 0.04em;
-  color: var(--text-main);
+  color: var(--text-soft);
 }
 
 
