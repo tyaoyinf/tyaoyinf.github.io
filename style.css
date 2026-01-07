@@ -167,7 +167,7 @@ body {
 }
 
 .menu-content img:nth-child(1) {
-  transform: translateY(60px);
+  transform: translateY(40px);
 }
 
 .menu-content img:nth-child(3) {
@@ -213,7 +213,7 @@ body {
 .general {
   padding-left: 1rem;
   border-left: 1px solid var(--cold-gray);
-  transform: translateY(30px)
+  transform: translateY(60px)
 }
 
 /* ---------------- GALLERY ---------------- */
