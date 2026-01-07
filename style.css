@@ -234,6 +234,7 @@ body {
   font-size: 18px;
   line-height: 1.8;
   color: var(--text-soft);
+  text-align: right;
 }
 
 .menu-after .invite {
