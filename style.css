@@ -15,7 +15,7 @@
 body {
   background: var(--bg);
   color: var(--text-main);
-  font-family: 'Shippori Mincho', serif;
+  font-family: 'Yuji Syuku', serif;
   font-weight: 350;
   font-size: 18px; 
   line-height: 1.8;
@@ -109,7 +109,7 @@ body {
 }
 
 .hero-center h1 {
-  font-family: 'Ballet', cursive;
+  font-family: 'Mrs Saint Delafield', cursive;
   font-size: 120px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -142,7 +142,7 @@ body {
 }
 
 .menu h2 {
-  font-family: 'Ballet', cursive;
+  font-family: 'Mrs Saint Delafield', cursive;
   font-size: 96px;
   font-weight: 400;
   transform: translateX(40px) rotate(1deg);
@@ -218,7 +218,7 @@ body {
 }
 
 .gallery h2 {
-  font-family: 'Ballet', cursive;
+  font-family: 'Mrs Saint Delafield', cursive;
   font-size: 96px;
   font-weight: 400;
   transform: translateX(-40px) rotate(-1deg);
