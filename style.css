@@ -216,6 +216,27 @@ body {
   transform: translateY(45px)
 }
 
+.menu-after {
+  margin: 90px auto 0;
+  max-width: 680px;
+  text-align: center;
+}
+
+.menu-after .monologue {
+  font-size: 20px;
+  line-height: 1.9;
+  color: var(--text-soft);
+}
+
+.menu-after .invite {
+  margin-top: 40px;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  color: var(--text-main);
+}
+
+
 /* ---------------- GALLERY ---------------- */
 .gallery {
   min-height: 100vh;
