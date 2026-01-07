@@ -93,7 +93,7 @@ body {
   top: -30px;
   left: -20px;
   font-size: 80px;
-  color: #777;
+  color: #707c74;
 }
 
 /* ---- CHỮ BAY ---- */
@@ -141,14 +141,14 @@ body {
   font-size: 96px;
   font-weight: 400;
   transform: translateX(40px) rotate(1deg);
-  margin-bottom: 60px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
 .menu-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 70px;
+  gap: 60px;
   align-items: center;
 }
 
@@ -182,7 +182,7 @@ body {
   align-items: baseline;
   gap: 0.4rem;
   margin-bottom: 0.6rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #2f2f2f;
 }
 
@@ -205,7 +205,7 @@ body {
 /* nội dung */
 .facts li em,
 .facts li span:last-child {
-  color: #1f1f1f;
+  color: #828282;
 }
 
 .general {
@@ -224,7 +224,7 @@ body {
   font-size: 96px;
   font-weight: 400;
   transform: translateX(-40px) rotate(-1deg);
-  margin-bottom: 60px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
