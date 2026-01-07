@@ -368,21 +368,21 @@ body {
 
 .book-frame section,
 .book-frame nav {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1600px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .book-frame::before {
   content: "";
   position: absolute;
-  inset: -12px;
+  inset: -18px;
 
   background:
-    radial-gradient(circle at 10px 10px, transparent 6px, #f4f3ef 7px),
-    radial-gradient(circle at 90% 20px, transparent 5px, #f4f3ef 6px),
-    radial-gradient(circle at 30% 95%, transparent 6px, #f4f3ef 7px),
-    radial-gradient(circle at 80% 90%, transparent 5px, #f4f3ef 6px);
+    radial-gradient(circle at 10px 10px, transparent 8px, #947a6d 8px),
+    radial-gradient(circle at 90% 20px, transparent 5px, #947a6d 6px),
+    radial-gradient(circle at 30% 95%, transparent 6px, #947a6d 7px),
+    radial-gradient(circle at 80% 90%, transparent 5px, #947a6d 6px);
 
   background-repeat: repeat;
   background-size: 40px 40px;
@@ -394,7 +394,7 @@ body {
 .book-frame::after {
   content: "";
   position: absolute;
-  inset: 8px -10px -10px 8px;
+  inset: 6px -6px -6px 6px;
 
   background: #554236;
   border: 1px solid rgba(80,80,80,0.12);
