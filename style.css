@@ -40,15 +40,18 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  background: rgba(241, 241, 240, 0.75);
+  backdrop-filter: blur(6px);
   z-index: 10;
+}
 
+.nav-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 22px 32px; /* MATCH frame */
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-
-  padding: 22px 90px;
-  background: rgba(241, 241, 240, 0.75);
-  backdrop-filter: blur(6px);
 }
 
 .nav-left {
@@ -357,7 +360,7 @@ body {
   min-width: 1200px;
 
   margin: 100px auto;
-  padding: 80px 0;
+  padding: 80px 64px;
 
   background: #828282;
   z-index: 2;
@@ -370,8 +373,8 @@ body {
 .book-frame section,
 .book-frame nav {
   max-width: 1600px;
-  margin-left: 32px;
-  margin-right: 32px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .book-frame::before {
