@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
   baseVx: (Math.random() - 0.5) * 0.15,
   baseVy: (Math.random() - 0.5) * 0.15
 });
-
+  }
+  
   let mouseX = -9999;
   let mouseY = -9999;
 
