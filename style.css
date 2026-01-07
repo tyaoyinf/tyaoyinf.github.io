@@ -276,87 +276,54 @@ body {
   transform: translateY(60px);
 }
 
-/* ================= EFFECTS ================= */
-
-/* ----- BỤI MỜ & SPARKLE ----- */
-.dust-layer {
+/* ===== EFFECT LAYERS ===== */
+.dust-layer,
+.petal-layer {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   pointer-events: none;
-  z-index: 1;
+  z-index: 9999;
   overflow: hidden;
 }
 
-.dust {
+/* ===== DUST ===== */
+.dust-layer span {
   position: absolute;
-  width: 3px;
-  height: 3px;
-  background: rgba(200, 200, 200, 0.35);
+  background: rgba(255, 255, 255, 0.45);
   border-radius: 50%;
-  filter: blur(0.3px);
-  animation: dustFloat linear infinite;
-}
-
-.spark {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-  box-shadow: 0 0 6px rgba(255,255,255,0.8);
   animation: dustFloat linear infinite;
 }
 
 @keyframes dustFloat {
-  from {
-    transform: translateY(100vh);
+  0% {
+    transform: translateY(0);
     opacity: 0;
   }
-  10% { opacity: 1; }
-  to {
-    transform: translateY(-10vh);
+  20% { opacity: 1; }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(-60px);
     opacity: 0;
   }
 }
 
-/* ----- HOA & LÁ RƠI ----- */
-.petal-layer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.petal {
+/* ===== PETALS ===== */
+.petal-layer span {
   position: absolute;
-  font-size: 20px;
-  opacity: 0.45;
+  opacity: 0.85;
   animation: petalFall linear infinite;
 }
 
 @keyframes petalFall {
   0% {
-    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    transform: translateY(-10vh) rotate(0deg);
     opacity: 0;
   }
-  10% { opacity: 0.45; }
+  10% { opacity: 1; }
   100% {
-    transform: translateY(110vh) translateX(60px) rotate(240deg);
+    transform: translateY(120vh) rotate(360deg);
     opacity: 0;
   }
-}
-
-.navbar,
-.hero,
-.menu,
-.gallery {
-  position: relative;
-  z-index: 2;
 }
