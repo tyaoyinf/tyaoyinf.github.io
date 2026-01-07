@@ -48,7 +48,7 @@ body {
 
   padding: 22px 90px;
   background: rgba(241, 241, 240, 0.75);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
 }
 
 .nav-left,
@@ -77,11 +77,11 @@ body {
 
 /* ---------------- HERO ---------------- */
 .hero {
-  min-height: 100vh;
-  padding: 150px 110px 0;
+  min-height: 80vh;
+  padding: 120px 90px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 60px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -106,7 +106,7 @@ body {
   position: absolute;
   top: -80px;
   left: -60px;
-  font-size: 100px;
+  font-size: 150px;
   color: #707c74;
   z-index: 3;
 }
@@ -137,8 +137,8 @@ body {
 
 /* ---- CIRCLE ---- */
 .sun {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   background: var(--dusty-rose);
   border-radius: 60%;
   margin: 0 auto 40px;
@@ -148,8 +148,8 @@ body {
 
 /* ---------------- MENU ---------------- */
 .menu {
-  min-height: 100vh;
-  padding: 150px 110px;
+  min-height: 80vh;
+  padding: 120px 90px;
 }
 
 .menu h2 {
@@ -165,7 +165,7 @@ body {
 .menu-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 60px;
+  gap: 40px;
   align-items: start;
 }
 
@@ -247,8 +247,8 @@ body {
 
 /* ---------------- GALLERY ---------------- */
 .gallery {
-  min-height: 100vh;
-  padding: 150px 110px;
+  min-height: 80vh;
+  padding: 120px 90px;
 }
 
 .gallery h2 {
