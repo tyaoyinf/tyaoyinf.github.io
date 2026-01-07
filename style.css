@@ -1,9 +1,9 @@
 :root {
   --bg: #f1f1f0;
   --cold-gray: #d4d5d8;
-  --text-main: #3b3b3b;
+  --text-main: #3f3e3e;
   --text-soft: #6f6f6f;
-  --dusty-rose: #c1a0a0;
+  --dusty-rose: #dfb1b6;
 }
 
 * {
@@ -166,7 +166,7 @@ body {
 }
 
 .menu-text {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--text-soft);
   text-align: center;
 }
@@ -191,7 +191,7 @@ body {
 
 .icon {
   margin-right: 0.4rem;
-  color: #b58a8a; /* hồng đỗ nhạt */
+  color: #bfb1b6; 
 }
 
 
