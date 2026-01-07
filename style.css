@@ -43,7 +43,7 @@ body {
   margin: 0 auto;
   padding: 18px 22px;
 
-  background: rgba(241, 241, 240, 0.75);
+  background: rgba(252, 250, 242, 0.6);
   backdrop-filter: blur(6px);
   z-index: 10;
 }
@@ -233,7 +233,7 @@ body {
 }
 
 .menu-after {
-  margin: 15px 0 0 auto;
+  margin: 0 0 0 auto;
   max-width: 680px;
 }
 
