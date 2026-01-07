@@ -111,6 +111,7 @@ body {
 
 .hero-center h1 {
   font-family: 'Mrs Saint Delafield', cursive;
+  color: var(--text-main);
   font-size: 120px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -144,6 +145,7 @@ body {
 
 .menu h2 {
   font-family: 'Mrs Saint Delafield', cursive;
+  color: var(--text-main);
   font-size: 96px;
   font-weight: 400;
   transform: translateX(40px) rotate(1deg);
@@ -220,6 +222,7 @@ body {
 
 .gallery h2 {
   font-family: 'Mrs Saint Delafield', cursive;
+  color: var(--text-main);
   font-size: 96px;
   font-weight: 400;
   transform: translateX(-40px) rotate(-1deg);
