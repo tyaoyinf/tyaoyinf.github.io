@@ -350,7 +350,7 @@ body {
   min-width: 1200px;
 
   margin: 100px auto;
-  padding: 80px 64px;
+  padding: 60px 18px;
 
   background: #828282;
   z-index: 2;
@@ -365,6 +365,7 @@ body {
   max-width: 1600px;
   margin-left: 12px;
   margin-right: 12px;
+  margin-inline: 8px;
 }
 
 .book-frame::before {
