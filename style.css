@@ -39,39 +39,44 @@ body {
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+
   max-width: 1600px;
   margin: 0 auto;
   padding: 18px 22px;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "left right"
+    "center right";
+
+  row-gap: 6px;
 
   background: rgba(252, 250, 242, 0.6);
   backdrop-filter: blur(6px);
   z-index: 10;
 }
 
-.nav-left,
-.nav-right {
-  line-height: 1;
-}
-
+/* --- LEFT (name) --- */
 .nav-left {
+  grid-area: left;
   font-size: 28px;
   letter-spacing: -1px;
   color: var(--text-soft);
-  justify-self: start;
+  line-height: 1;
 }
 
-.nav-right {
-  font-size: 16px;
-  letter-spacing: -1px;
-  color: var(--text-soft);
-  justify-self: end;
-  text-align: right;
-}
-
+/* --- CENTER (menu) --- */
 .nav-center {
+  grid-area: center;
   list-style: none;
   display: flex;
   gap: 48px;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-center a {
@@ -83,6 +88,18 @@ body {
 
 .nav-center a:hover {
   opacity: 0.6;
+}
+
+/* --- RIGHT (info) --- */
+.nav-right {
+  grid-area: right;
+  font-size: 16px;
+  letter-spacing: -1px;
+  color: var(--text-soft);
+  text-align: right;
+
+  align-self: end; /* bám đáy của 2 hàng */
+  line-height: 1;
 }
 
 /* ---------------- HERO ---------------- */
