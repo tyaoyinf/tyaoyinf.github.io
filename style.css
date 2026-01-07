@@ -24,6 +24,7 @@ body {
 
 .intro {
   font-size: inherit;
+  color: var(--text-soft);
 }
 
 /* ---------------- NAV ---------------- */
