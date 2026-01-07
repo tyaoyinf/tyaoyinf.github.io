@@ -358,7 +358,7 @@ body {
   margin: 100px auto;
   padding: 80px 0;
 
-  background: #fcfaf2;
+  background: #828282;
   z-index: 2;
 
   box-shadow:
@@ -369,8 +369,8 @@ body {
 .book-frame section,
 .book-frame nav {
   max-width: 1600px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .book-frame::before {
@@ -394,7 +394,7 @@ body {
 .book-frame::after {
   content: "";
   position: absolute;
-  inset: 6px -10px -10px 6px;
+  inset: 8px -18px -18px 10px;
 
   background: #fcfaf2;
   border: 1px solid rgba(80,80,80,0.12);
