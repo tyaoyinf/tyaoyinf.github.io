@@ -59,8 +59,10 @@ body {
 
 .nav-right {
   font-size: 14px;
-  letter-spacing: -1x;
+  letter-spacing: -1px;
   color: var(--text-soft);
+  justify-self: end;
+  text-align: right;
 }
 
 .nav-center {
