@@ -104,8 +104,8 @@ body {
 
 .jp-char {
   position: absolute;
-  top: -30px;
-  left: -20px;
+  top: -10px;
+  left: -5px;
   font-size: 100px;
   color: #707c74;
 }
