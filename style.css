@@ -293,28 +293,31 @@ body {
   overflow: hidden;
 }
 
-/* ===== DUST ===== */
-.dust-layer span {
-  position: absolute;
-  background: rgba(150, 138, 120, 0.35); 
-  border-radius: 50%;
-  filter: blur(1.2px);
-  animation: dustFloat linear infinite;
+/* ===== DUST LAYER ===== */
+.dust-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
 }
 
-@keyframes dustFloat {
+.dust-layer span {
+  position: absolute;
+  background: rgba(135, 125, 110, 0.55); /* xám cát Nhật */
+  border-radius: 30% 70% 60% 40%; /* méo */
+  animation: dustDrift linear infinite;
+}
+
+/* bụi bay chậm, không rơi thẳng */
+@keyframes dustDrift {
   0% {
-    transform: translateY(20px);
-    opacity: 0;
+    transform: translate(0, 0);
   }
-  20% { opacity: 0.6; }
-  60% {
-    transform: translateY(-20px);
-    opacity: 0.4;
+  50% {
+    transform: translate(-20px, -10px);
   }
   100% {
-    transform: translateY(-60px);
-    opacity: 0;
+    transform: translate(20px, -30px);
   }
 }
 
