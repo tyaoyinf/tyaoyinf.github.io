@@ -351,14 +351,14 @@ body {
 .book-frame {
   position: relative;
 
-  width: calc(100vw - 140px); /* KHUNG TO ĐỀU */
-  max-width: 1400px;
+  width: calc(100vw - 60px); /* KHUNG TO ĐỀU */
+  max-width: 1600px;
   min-width: 1200px;
 
   margin: 100px auto;
   padding: 80px 0;
 
-  background: #f4f3ef;
+  background: #fcfaf2;
   z-index: 2;
 
   box-shadow:
@@ -396,7 +396,7 @@ body {
   position: absolute;
   inset: 8px -10px -10px 8px;
 
-  background: #f7f6f2;
+  background: #554236;
   border: 1px solid rgba(80,80,80,0.12);
   z-index: -2;
 }
