@@ -311,17 +311,7 @@ body {
   will-change: transform;
 }
 
-@keyframes dustDrift {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(-70px, -40px);
-  }
-  100% {
-    transform: translate(90px, -140px);
-  }
-}
+/* animation: dustDrift linear infinite; */
 
 /* ===== PETALS ===== */
 .petal-layer span {
