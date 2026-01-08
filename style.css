@@ -1,5 +1,5 @@
 :root {
-  --bg: #3a3226;
+  --bg: #4f4f48;
   --cold-gray: #91989f; /*ginnezumi*/
   --text-main: #787878;
   --text-soft: #566c73; /*ainezumi*/
@@ -43,7 +43,7 @@ body {
   width: 100%;
 
   min-height: 92px;
-  padding: 18px 32px;
+  padding: 18px 22px;
 
   background: rgba(252, 250, 242, 0.6);
   backdrop-filter: blur(6px);
